@@ -1,0 +1,50 @@
+/* public/styles/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #001F3F; /* Задній фон темно-синього кольору */
+    color: #fff; /* Колір тексту для контрасту на темно-синьому фоні */
+    position: relative;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30%; /* Зменшений розмір полоси білого кольору */
+    background-color: #fff; /* Колір полоси білого кольору */
+    z-index: -1; /* Помістіть полосу позаду вмісту */
+}
+
+h1, li {
+    color: #fff; /* Колір тексту для контрасту на темно-синьому фоні */
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #001F3F; /* Задній фон для кожного посту (того ж кольору, що і сторінка) */
+    color: #fff; /* Колір тексту для контрасту на темно-синьому фоні */
+    max-width: 60%; /* Зменшити максимальну ширину блоку поста */
+    box-sizing: border-box; /* Включити padding у визначення ширини блоку */
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+    color: #fff; /* Колір тексту для контрасту на темно-синьому фоні */
+}
+
+a:hover {
+    text-decoration: underline;
+}
